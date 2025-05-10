@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tablet-frame">
+        <div class="container">
+            <div class="header">
+                <h1>📋 Ma Tablette</h1>
+            </div>
+
+            <div class="toolbar">
+                <input type="text" id="urlInput" placeholder="Lien Google Docs ou Sheets">
+                <button id="saveBtn">Ouvrir/Enregistrer</button>
+                <button id="resetBtn">Reset</button>
+                <button id="closeBtn">Fermer</button>
+            </div>
+
+            <iframe id="iframe" sandbox="allow-scripts allow-same-origin"></iframe>
+
+            <div id="error-message" class="error-message">
+                ❌ Seuls les liens Google Docs ou Google Sheets sont autorisés !
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
